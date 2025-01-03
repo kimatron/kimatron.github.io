@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Version Control for the Chronically Disorganized | Kim Hanlon</title>
-    <meta name="description" content="A practical guide to Git version control, perfect for developers and non-coders alike. Learn how Git can transform your workflow from chaos to organized productivity.">
-    <meta name="keywords" content="git tutorial, version control, git for beginners, software development, coding organization, git basics">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Git-ting Started: Version Control for the Chronically Disorganized">
-    <meta property="og:description" content="Transform your coding workflow from chaos to clarity with Git. A practical guide for both developers and non-coders.">
+    <title>Git-ting Started | Kim Hanlon</title>
+    <meta name="description" content="A realistic take on Git from someone who used to lose their wetsuit in a studio apartment. Version control explained without the jargon.">
+    <meta property="og:title" content="Git-ting Started">
+    <meta property="og:description" content="Finally, a Git guide for the rest of us">
     <meta property="og:image" content="media/messydesk.jpg">
-    <meta property="og:url" content="https://kimhanlon.me/blog/gitting-started">
     
-    <!-- Article Meta -->
-    <meta property="article:published_time" content="2024-09-01">
-    <meta property="article:author" content="Kim Hanlon">
-    <meta property="article:section" content="Development">
-    <meta property="article:tag" content="Git">
-
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/blog.css">
@@ -47,165 +35,136 @@
           <a href="/#contact" class="cyber-link">Contact</a>
       </div>
 </nav>
-
     <main class="blog-post-container">
         <article class="cyber-article">
             <header class="article-header">
                 <div class="article-meta">
                     <time datetime="2024-09-01">01.09.2024</time>
-                    <span class="article-category">Development</span>
                 </div>
-                <h1 class="article-title cyber-glitch-2">Git-ting Started: Version Control for the Chronically Disorganized</h1>
-                <div class="article-info">
-                    <div class="reading-time">
-                        <span class="cyber-icon">⏱️</span>
-                        <span>8 min read</span>
-                    </div>
-                    <div class="article-tags">
-                        <span class="tag">Git</span>
-                        <span class="tag">Version Control</span>
-                        <span class="tag">Development</span>
-                    </div>
-                </div>
+                <h1 class="article-title cyber-glitch-2">Git-ting Started</h1>
             </header>
 
             <div class="article-featured-image">
-                <img src="media/messydesk.jpg" alt="A chaotic desk transforming into an organized workspace through Git version control" class="u-photo">
-                <div class="image-caption">From chaos to control: The Git journey</div>
+                <img src="media/messydesk.jpg" alt="My chaotic desk before discovering Git">
             </div>
 
             <div class="article-content">
-                <div class="table-of-contents">
-                    <h2 class="toc-title">_navigation</h2>
-                    <ul class="toc-list">
-                        <li><a href="#intro">Understanding Git</a></li>
-                        <li><a href="#basics">Core Concepts</a></li>
-                        <li><a href="#workflow">Practical Workflow</a></li>
-                        <li><a href="#advanced">Beyond Basics</a></li>
-                        <li><a href="#tips">Pro Tips & Common Pitfalls</a></li>
-                    </ul>
+                <p class="cyber-text">
+                    Let's talk about Git. And before you run away screaming, hear me out. I'm probably the last person you'd expect to be writing about version control. I once lost my wetsuit in a studio apartment. A studio apartment. How do you even do that? But that's exactly why I fell in love with Git - it's basically a time machine for people who can't keep track of their stuff.
+                </p>
+
+                <div class="cyber-box">
+                    <p>Quick note: This isn't your typical Git tutorial. If you're looking for a deep dive into Git internals, there are better guides out there. This is for people like me who just want to stop losing their work and maybe look a bit more professional in the process.</p>
                 </div>
 
-                <section id="intro" class="article-section">
-                    <p class="cyber-text intro">As someone who once lost an entire wetsuit in a studio apartment (don't ask), I understand the struggles of the organizationally challenged. But fear not, fellow chaos enthusiasts! Today, we're diving into Git, a version control system that's about to become your new best friend – or at least, the friend who always remembers where you left your keys.</p>
+                <section class="article-section">
+                    <h2>What's Git Anyway?</h2>
                     
-                    <div class="cyber-box">
-                        <h3>Quick Git Overview</h3>
-                        <ul class="cyber-list">
-                            <li>Version control system for tracking changes</li>
-                            <li>Works for code and any text-based projects</li>
-                            <li>Enables collaboration and backup</li>
-                            <li>Perfect for both solo and team projects</li>
-                        </ul>
+                    <p>Remember playing video games where you could save your progress and go back to that save point when things went wrong? That's Git, but for your code (or any text files, really). It's like having infinite undo buttons, each with a little note saying "this is where I added that feature that actually worked."</p>
+
+                    <div class="cyber-callout">
+                        <p>True story: My first week using Git, I accidentally deleted half my code. Instead of having a panic attack (okay, I still had a small one), I just rolled back to my last commit. Magic.</p>
                     </div>
                 </section>
 
-                <section id="basics" class="article-section">
-                    <h2>Core Concepts: Your Git Survival Kit</h2>
+                <section class="article-section">
+                    <h2>Getting Started (For Real)</h2>
                     
-                    <h3>Repositories: Your Project's Digital Home</h3>
-                    <p class="cyber-text">Think of a Git repository as a super-intelligent folder that not only stores your files but remembers every change you've ever made. It's like having a personal historian for your project, minus the lengthy lectures about the significance of semicolons in the Victorian era.</p>
+                    <p>First things first - you need to set up Git. It's like setting up a new phone, but less annoying and you only have to do it once. Here's the bare minimum:</p>
 
                     <div class="code-block">
-                        <pre><code># Initialize a new repository
+                        <pre><code># Tell Git who you are
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+
+# Start tracking a project
 git init
 
-# Check repository status
+# Check what's going on
 git status</code></pre>
                     </div>
 
-                    <h3>Commits: Snapshots in Time</h3>
-                    <p class="cyber-text">Commits are like save points in a video game, except you can't use them to retry that awkward conversation from last week. Each commit captures a snapshot of your project at a specific moment, complete with a message explaining what changed.</p>
-
-                    <div class="cyber-callout">
-                        <h4>Writing Good Commit Messages</h4>
-                        <p>❌ "Fixed stuff"<br>
-                        ✅ "Fix navigation bar overflow on mobile devices"</p>
-                    </div>
+                    <p>That's it. You're now officially using Git. Feel free to put it on your LinkedIn.</p>
                 </section>
 
-                <section id="workflow" class="article-section">
-                    <h2>Practical Workflow: Git in Action</h2>
+                <section class="article-section">
+                    <h2>The Three Commands You'll Actually Use</h2>
                     
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <h3>Staging Changes</h3>
-                            <p>Use git add to stage files for commit. Think of it as putting items in a box before sealing it.</p>
-                            <code>git add filename.txt</code>
-                        </div>
-                        <div class="skill-card">
-                            <h3>Committing Changes</h3>
-                            <p>Commit your staged changes with a meaningful message.</p>
-                            <code>git commit -m "Add login feature"</code>
-                        </div>
-                        <div class="skill-card">
-                            <h3>Branching</h3>
-                            <p>Create separate branches for different features or experiments.</p>
-                            <code>git branch feature-name</code>
-                        </div>
-                        <div class="skill-card">
-                            <h3>Merging</h3>
-                            <p>Combine changes from different branches.</p>
-                            <code>git merge feature-name</code>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="advanced" class="article-section">
-                    <h2>Beyond Basics: Leveling Up Your Git Game</h2>
-                    
-                    <p class="cyber-text">Once you've mastered the basics, Git offers plenty of advanced features that can make your life easier. Here are some of my favorites:</p>
+                    <p>Let's be real - Git has tons of commands, but you'll probably use these three 90% of the time:</p>
 
                     <div class="cyber-box">
-                        <h3>Advanced Git Features</h3>
                         <ul class="cyber-list">
-                            <li>Interactive rebasing for cleaning up commit history</li>
-                            <li>Git hooks for automating workflows</li>
-                            <li>Cherry-picking specific commits</li>
-                            <li>Stashing changes for later use</li>
+                            <li>git add . (stage your changes - think "I want to keep these changes")</li>
+                            <li>git commit -m "did stuff" (save your changes - but please write better messages than that)</li>
+                            <li>git push (send your changes to GitHub or wherever)</li>
                         </ul>
                     </div>
                 </section>
 
-                <section id="tips" class="article-section">
-                    <h2>Pro Tips & Common Pitfalls</h2>
+                <section class="article-section">
+                    <h2>When Things Go Wrong</h2>
 
-                    <div class="cyber-callout warning">
-                        <h3>Common Git Mistakes to Avoid</h3>
-                        <ul>
-                            <li>Committing sensitive information (use .gitignore!)</li>
-                            <li>Working directly on the main branch</li>
-                            <li>Forgetting to pull before pushing</li>
-                            <li>Not backing up your repository</li>
-                        </ul>
+                    <p>And they will. Oh boy, will they ever. Here's what I've learned from breaking things:</p>
+
+                    <div class="cyber-callout">
+                        <p>git status is your friend. When in doubt, run git status. It's like checking your air gauge while diving - you can never do it too often.</p>
                     </div>
 
-                    <blockquote class="cyber-quote">
-                        "Git is like a time machine for your code. Use it wisely, and you'll never have to explain to your boss why the production server is running code from three weeks ago."
-                    </blockquote>
+                    <p>If you really mess up, there's always:</p>
 
-                    <p class="cyber-text">Remember, every Git expert started as a beginner. The key is to start small, build good habits, and gradually explore more advanced features as you need them.</p>
+                    <div class="code-block">
+                        <pre><code># The "oh crap" button
+git reset --hard HEAD
+
+# The "let me pretend that never happened" command
+git branch backup-just-in-case
+git reset --hard HEAD~1</code></pre>
+                    </div>
+                </section>
+
+                <section class="article-section">
+                    <h2>Branches: Your New Best Friend</h2>
+                    
+                    <p>Branches are like parallel universes for your code. Want to try something crazy? Make a branch. Don't like how it turned out? Delete it and pretend it never happened. It's like having a save point before fighting the final boss.</p>
+
+                    <div class="cyber-box">
+                        <p>Pro tip: Never work directly on main. Ever. It's like editing your only copy of a document - technically possible, but why risk it?</p>
+                    </div>
+                </section>
+
+                <section class="article-section">
+                    <h2>The Stuff I Wish Someone Had Told Me</h2>
+
+                    <p>After messing up in every way possible, here's what I've learned:</p>
+
+                    <div class="cyber-callout">
+                        <ul>
+                            <li>Commit early, commit often. It's like saving your game - you can never do it too much</li>
+                            <li>Write commit messages your future self can understand</li>
+                            <li>Don't panic when you see merge conflicts - they're annoying, not fatal</li>
+                            <li>Back up your stuff to GitHub (learned this one the hard way)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="article-section">
+                    <h2>Final Thoughts</h2>
+                    
+                    <p>Git isn't perfect. Sometimes it feels like trying to drive a spaceship when all you wanted was a bicycle. But it's saved my bacon more times than I can count, and it might save yours too.</p>
+
+                    <p>And hey, if I can learn Git, anyone can. I mean, remember the wetsuit story? Yeah. You've got this.</p>
+
+                    <div class="cyber-box">
+                        <p>P.S. I eventually found the wetsuit. It was in the freezer. Don't ask.</p>
+                    </div>
                 </section>
             </div>
 
             <footer class="article-footer">
                 <div class="author-bio">
-                    <img src="media/kim.jpg" alt="Kim Hanlon" class="author-image">
+                    <img src="media/profile.jpg" alt="Kim Hanlon" class="author-image">
                     <div class="author-info">
-                        <h3>About the Author</h3>
-                        <p>Kim Hanlon is a full-stack developer who transitioned from marine conservation to tech. She brings a unique perspective to technical topics, making complex concepts accessible through real-world analogies.</p>
-                    </div>
-                </div>
-
-                <div class="share-section">
-                    <h3>Share this article</h3>
-                    <div class="share-buttons">
-                        <button class="cyber-button" onclick="shareArticle('linkedin')">
-                            <span>Share on LinkedIn</span>
-                        </button>
-                        <button class="cyber-button" onclick="shareArticle('facebook')">
-                            <span>Share on Facebook</span>
-                        </button>
+                        <p>Kim writes about tech stuff, occasionally loses important things, and is gradually learning to use Git properly. Usually in that order.</p>
                     </div>
                 </div>
 
