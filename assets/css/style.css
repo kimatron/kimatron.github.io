@@ -109,6 +109,105 @@ body {
   display: none;
 }
 
+/* Mobile Navigation */
+.mobile-menu-btn {
+  display: none;  /* Hidden by default on desktop */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.hamburger-box {
+  width: 30px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger-inner {
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary);
+  transition: transform 0.3s ease;
+}
+
+.hamburger-inner::before {
+  top: -8px;
+}
+
+.hamburger-inner::after {
+  bottom: -8px;
+}
+
+/* Active state */
+.mobile-menu-btn.active .hamburger-inner {
+  background-color: transparent;
+}
+
+.mobile-menu-btn.active .hamburger-inner::before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu-btn.active .hamburger-inner::after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+      display: block;  /* Show on mobile */
+  }
+
+  .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem;
+      border-bottom: 1px solid var(--primary);
+  }
+
+  .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .nav-links a {
+      padding: 1rem;
+      text-align: center;
+      width: 100%;
+      border-bottom: 1px solid rgba(0,255,157,0.1);
+  }
+
+  .nav-links a:last-child {
+      border-bottom: none;
+  }
+
+  /* Ensure the container allows for absolute positioning */
+  .nav-container {
+      position: relative;
+      width: 100%;
+  }
+}
+
 /* Hero Section */
 .hero-section {
   min-height: 100vh;
