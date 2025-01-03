@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mobile Menu Toggle
   const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
   const navLinks = document.querySelector('.nav-links');
-  
+
   mobileMenuBtn?.addEventListener('click', () => {
       navLinks.classList.toggle('active');
   });
@@ -89,6 +89,26 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', highlightNavigation);
+
+  // Timeline Animation
+  const timelineItems = document.querySelectorAll('.timeline-item');
+
+  function animateTimeline() {
+      const windowHeight = window.innerHeight;
+
+      timelineItems.forEach(item => {
+          const itemTop = item.getBoundingClientRect().top;
+
+          if (itemTop < windowHeight - 100) {
+              item.classList.add('visible');
+          } else {
+              item.classList.remove('visible');
+          }
+      });
+  }
+
+  window.addEventListener('scroll', animateTimeline);
+  animateTimeline(); // Run on load to handle items already in view
 
   // Form Handling
   const form = document.querySelector('.cyber-form');
