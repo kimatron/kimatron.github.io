@@ -108,24 +108,4 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 2000);
       });
   }
-
-  // Optional: Scroll-triggered animations
-  // Using CSS classes instead of inline styles for better performance
-  const animatedElements = document.querySelectorAll('.tech-card, .project-card, .timeline-item');
-  
-  const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-          }
-      });
-  }, {
-      threshold: 0.2
-  });
-
-  animatedElements.forEach(element => {
-      element.classList.add('animate-on-scroll');
-      observer.observe(element);
-  });
 });
