@@ -36,8 +36,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
+    <!-- Preload Critical Assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "Person",
@@ -63,16 +68,68 @@
             "Technical Diving",
             "Technical Writing",
             "Scuba Instruction",
-            "Scuba Diving",
+            "Scuba Diving"
+        ],
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Full Stack Developer",
+            "skills": [
+                "React.js",
+                "Vue.js",
+                "Node.js",
+                "Azure Cloud Services",
+                "Python",
+                "ASP.NET Core",
+                "MongoDB",
+                "PostgreSQL"
+            ],
+            "occupationLocation": {
+                "@type": "Place",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "New Ross",
+                    "addressCountry": "Ireland"
+                }
+            }
+        },
+        "workExample": [
+            {
+                "@type": "CreativeWork",
+                "name": "Marine Data Tracker",
+                "description": "A full-stack application for tracking marine biodiversity data, built with React, Node.js, and Azure services."
+            },
+            {
+                "@type": "CreativeWork",
+                "name": "Cloud-Based Dive Log",
+                "description": "A mobile-responsive web app for divers to log and analyze their dives, using Vue.js and Azure Functions."
+            },
+            {
+                "@type": "CreativeWork",
+                "name": "Conservation Crowdfunding Platform",
+                "description": "A secure platform for funding marine conservation projects, built with ASP.NET Core and Azure Cosmos DB."
+            }
+        ],
+        "blogPosts": [
+            {
+                "@type": "BlogPosting",
+                "headline": "How I Went from Diving with Sharks to Debugging Code",
+                "datePublished": "2024-01-03",
+                "url": "https://kimhanlon.me/sharkcoding.html"
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "Version Control for the Chronically Disorganized",
+                "datePublished": "2024-01-02",
+                "url": "https://kimhanlon.me/gittingstarted.html"
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "Diving into Azure",
+                "datePublished": "2024-01-01",
+                "url": "https://kimhanlon.me/divingintoazure.html"
+            }
         ]
     }
-    </script>
-
-    <!-- Preload Critical Assets -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="cyberpunk-theme">
     <!-- Background Effects -->
