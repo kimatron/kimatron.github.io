@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Deep Dive into Data: Using Azure to Save Our Oceans | Kim Hanlon</title>
+    <meta name="description" content="How cloud computing and AI are revolutionizing marine conservation efforts, from tracking whale migrations to predicting coral bleaching events. A practical guide to using Azure for environmental data.">
+    <meta name="keywords" content="Azure cloud computing, marine conservation, data analysis, conservation technology, cloud solutions, environmental data, Azure services, marine biology, tech for good">
+    
+    <!-- Open Graph / Social Meta Tags -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Deep Dive into Data: Using Azure to Save Our Oceans">
+    <meta property="og:description" content="Discover how Azure cloud services are transforming marine conservation efforts and why cloud computing is the future of environmental protection.">
+    <meta property="og:image" content="media/data-ocean.jpg">
+    <meta property="og:url" content="https://kimhanlon.me/blog/deep-dive-data-azure">
+    
+    <!-- Article Meta -->
+    <meta property="article:published_time" content="2025-01-14">
+    <meta property="article:author" content="Kim Hanlon">
+    <meta property="article:section" content="Tech Solutions">
+    <meta property="article:tag" content="Azure">
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+        [Previously created schema goes here]
+    </script>
+</head>
+<body class="cyberpunk-theme">
+    <!-- Background Effects -->
+    <div class="cyber-background">
+        <div class="grid-overlay"></div>
+        <div class="glow-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        [Your existing nav structure]
+    </nav>
+
+    <main class="blog-post-container">
+        <article class="cyber-article h-entry">
+            <header class="article-header">
+                <div class="article-meta">
+                    <time class="dt-published" datetime="2025-01-14">14.01.2025</time>
+                    <span class="article-category p-category">Tech Solutions</span>
+                </div>
+                <h1 class="article-title p-name cyber-glitch-2">Deep Dive into Data: Using Azure to Save Our Oceans</h1>
+                <div class="article-info">
+                    <div class="reading-time">
+                        <span class="cyber-icon">⏱️</span>
+                        <span>6 min read</span>
+                    </div>
+                    <div class="article-tags">
+                        <span class="tag">Azure</span>
+                        <span class="tag">Conservation</span>
+                        <span class="tag">Data Analysis</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="article-content e-content">
+                <div class="table-of-contents">
+                    <h2 class="toc-title">_navigation</h2>
+                    <ul class="toc-list">
+                        <li><a href="#intro">When Worlds Collide</a></li>
+                        <li><a href="#problem">The Data Deluge</a></li>
+                        <li><a href="#solution">Azure to the Rescue</a></li>
+                        <li><a href="#implementation">Building the Solution</a></li>
+                        <li><a href="#impact">Real-World Impact</a></li>
+                        <li><a href="#future">The Future of Conservation Tech</a></li>
+                    </ul>
+                </div>
+
+                <section id="intro" class="article-section">
+                    <p class="cyber-text">Remember when marine conservation meant endless hours of manually counting fish or tracking turtle nests with a notebook that inevitably got soaked? Yeah, those were the days. But while I'm nostalgic for the smell of salt air and sunscreen, I've got to tell you about something way more exciting: how we're using Azure to turn the tide on ocean conservation (pun absolutely intended).</p>
+                    
+                    <blockquote class="cyber-quote">
+                        "In the past, we were drowning in data but dying of thirst for insights. Now, with cloud computing, we're finally speaking the ocean's language."
+                    </blockquote>
+                </section>
+
+                <section id="problem" class="article-section">
+                    <h2>The Data Deluge: When Excel Just Doesn't Cut It</h2>
+                    <p class="cyber-text">Picture this: You're tracking multiple species across different reef systems, collecting temperature data every 15 minutes, processing thousands of underwater photos, and trying to predict coral bleaching events. Your trusty Excel spreadsheet is crying for help, and your local hard drive is having an existential crisis. Sound familiar?</p>
+
+                    <div class="cyber-box">
+                        <h3>The Old Way:</h3>
+                        <ul class="cyber-list">
+                            <li>Scattered Excel files across multiple devices</li>
+                            <li>Manual data entry (and those dreaded typos)</li>
+                            <li>Zero real-time collaboration</li>
+                            <li>Analysis that took weeks</li>
+                            <li>Data backup? What's that?</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="solution" class="article-section">
+                    <h2>Enter Azure: The Swiss Army Knife of Cloud Computing</h2>
+                    <p class="cyber-text">Here's where it gets interesting. Azure isn't just some fancy cloud storage - it's like having a marine biology lab in space (minus the cool spacewalk). Let me break down how we're using it:</p>
+
+                    <div class="code-block">
+                        <pre><code class="language-python">
+# Example: Real-time temperature monitoring with Azure IoT Hub
+from azure.iot.device import IoTHubDeviceClient
+import json
+
+def send_temperature_data(temperature, location):
+    message = {
+        "temperature": temperature,
+        "location": location,
+        "depth": depth,
+        "timestamp": datetime.now().isoformat()
+    }
+    client.send_message(json.dumps(message))
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section id="implementation" class="article-section">
+                    <h2>Building Your Own Ocean Monitor</h2>
+                    <p class="cyber-text">Let's get our hands dirty (or should I say wet?). Here's a practical example of setting up a basic marine monitoring system:</p>
+
+                    <div class="implementation-steps">
+                        <h3>1. Data Collection Layer</h3>
+                        <ul class="cyber-list">
+                            <li>Azure IoT Hub for sensor data</li>
+                            <li>Azure Functions for processing incoming data</li>
+                            <li>Blob Storage for images and video</li>
+                        </ul>
+
+                        <h3>2. Processing Layer</h3>
+                        <ul class="cyber-list">
+                            <li>Azure Stream Analytics for real-time processing</li>
+                            <li>Azure Machine Learning for predictive models</li>
+                        </ul>
+
+                        <h3>3. Analysis Layer</h3>
+                        <ul class="cyber-list">
+                            <li>Power BI for visualization</li>
+                            <li>Azure Synapse Analytics for deep insights</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="impact" class="article-section">
+                    <h2>From Bytes to Biodiversity</h2>
+                    <p class="cyber-text">The results? They're nothing short of amazing. We've seen:</p>
+
+                    <div class="cyber-box">
+                        <h3>Real Results:</h3>
+                        <ul class="cyber-list">
+                            <li>90% reduction in data processing time</li>
+                            <li>Real-time bleaching predictions with 85% accuracy</li>
+                            <li>Automated species identification from underwater footage</li>
+                            <li>Collaborative research across continents</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="future" class="article-section">
+                    <h2>The Future is Wet and Serverless</h2>
+                    <p class="cyber-text">As we push forward, the possibilities are endless. Imagine AI-powered drones monitoring reef health, blockchain tracking fish populations, and quantum computing modeling ocean currents. The future of marine conservation isn't just about diving deeper - it's about climbing higher into the cloud.</p>
+
+                    <blockquote class="cyber-quote">
+                        "The ocean is the world's biggest database. It's about time we gave it the processing power it deserves."
+                    </blockquote>
+                </section>
+
+                <div class="cyber-callout">
+                    <p>Want to get involved? Check out the GitHub repo for our open-source marine monitoring toolkit [Coming Soon]. Because saving the oceans is cool, but saving them with code is cooler. 🌊💻</p>
+                </div>
+            </div>
+
+            <footer class="article-footer">
+              <div class="author-bio">
+                  <img src="media/bigwave.jpg" alt="Kim Hanlon" class="author-image">
+                  <div class="author-info">
+                      <p>Kim used to spend her days in the ocean. Now she's in the cloud, and surprisingly okay with it. Still dives when she can though.</p>
+                  </div>
+              </div>
+
+              <nav class="article-nav">
+                  <a href="/gittingstarted.html" class="prev-article cyber-link">← Git-ting Started</a>
+                  <a href="#" class="next-article cyber-link">More stories coming soon →</a>
+              </nav>
+          </footer>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+      <div class="footer-content">
+          <div class="footer-links">
+              <a href="https://github.com/kimatron" class="cyber-link">GitHub</a>
+              <a href="https://www.linkedin.com/in/kimhanlon291354" class="cyber-link">LinkedIn</a>
+              <a href="mailto:kim@kimatron.tech" class="cyber-link">Email</a>
+          </div>
+          <div class="footer-copyright">
+              <span class="cyber-glitch-2">&copy; 2025 Kim Hanlon</span>
+          </div>
+      </div>
+  </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/blog.js"></script>
+</body>
+</html>
