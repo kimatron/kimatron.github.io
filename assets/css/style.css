@@ -23,6 +23,15 @@ body {
   overflow-x: hidden;
 }
 
+.hero-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-link:hover {
+  text-decoration: underline;
+}
+
 /* Background Effects */
 .cyber-background {
   position: fixed;
