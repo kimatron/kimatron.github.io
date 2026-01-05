@@ -1,455 +1,138 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Primary Meta Tags -->
+<html lang="en" class="bg-[#0A0A0B] text-white selection:bg-[#FF3D00] selection:text-white">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kim Hanlon | Full Stack Developer & Marine Conservation Tech Expert</title>
-    <meta name="title" content="Kim Hanlon | Full Stack Developer & Scuba Diving Professional | Wexford, Ireland">
-    <meta name="description" content="Full Stack Developer specializing in Azure cloud solutions, combining marine conservation expertise with modern web development. Explore my journey from ocean to code.">
-    <meta name="keywords" content="full stack developer, cloud computing, azure developer, marine conservation tech, web development, scuba, diver, tech, PADI, Kim Hanlon, Wexford, software, Ireland, New Ross,">
+    
+    <!-- SEO Meta Tags -->
+    <title>Kim Hanlon | Software Developer & Former Dive Instructor | Wexford, Ireland</title>
+    <meta name="description" content="Kim Hanlon - Software developer specializing in React, Django, and cloud services. Former technical dive instructor turned full-stack developer. Based in Wexford, working in Dublin. Azure certified.">
+    <meta name="keywords" content="Kim Hanlon, software developer, web developer, React developer, Django developer, Azure, Wexford developer, Irish developer, dive instructor to developer, Devdactyl, full-stack developer Ireland">
     <meta name="author" content="Kim Hanlon">
-    <meta name="robots" content="index, follow">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <!-- Open Graph / Facebook -->
+    
+    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kimhanlon.me/">
-    <meta property="og:title" content="Kim Hanlon | Full Stack Developer & Marine Conservation Tech Expert">
-    <meta property="og:description" content="Full Stack Developer specializing in Azure cloud solutions, combining marine conservation expertise with modern web development.">
-    <meta property="og:image" content="https://kimhanlon.me/media/bigwave.jpg">
-
-    <!-- X (formerly Twitter) -->
-    <meta name="x:card" content="summary_large_image">
-    <meta name="x:url" content="https://kimhanlon.me/">
-    <meta name="x:title" content="Kim Hanlon | Full Stack Developer & Marine Conservation Tech Expert">
-    <meta name="x:description" content="Full Stack Developer specializing in Azure cloud solutions, combining marine conservation expertise with modern web development.">
-    <meta name="x:image" content="https://kimhanlon.me/media/bigwave.jpg">
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <!-- Preload Critical Assets -->
+    <meta property="og:title" content="Kim Hanlon | Software Developer">
+    <meta property="og:description" content="Wexford based Full-stack developer specializing in React and Django. Former dive instructor. Building custom web solutions.">
+    <meta property="og:image" content="https://kimhanlon.me/media/kim.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kim Hanlon | Software Developer">
+    <meta name="twitter:description" content="Full-stack developer. Former dive instructor. React, Django, Azure.">
+    <meta name="twitter:image" content="https://kimhanlon.me/og-image.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kimhanlon.me/">
+    <title>Kim Hanlon | Developer & Diver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "name": "Kim Hanlon",
-        "url": "https://kimhanlon.me",
-        "sameAs": [
-            "https://www.linkedin.com/in/kimhanlon291354",
-            "https://github.com/kimatron"
-        ],
-        "jobTitle": "Full Stack Developer",
-        "description": "Full Stack Developer specializing in Azure cloud solutions and web development, with a background in marine conservation.",
-        "image": "https://kimhanlon.me/media/bigwave.jpg",
-        "alumniOf": {
-            "@type": "Organization",
-            "name": "Marine Conservation"
-        },
-        "knowsAbout": [
-            "Full Stack Development",
-            "Front End",
-            "Azure Cloud Computing",
-            "Marine Conservation",
-            "Web Development",
-            "Technical Diving",
-            "Technical Writing",
-            "Scuba Instruction",
-            "Scuba Diving"
-        ],
-        "hasOccupation": {
-            "@type": "Occupation",
-            "name": "Full Stack Developer",
-            "skills": [
-                "React.js",
-                "Vue.js",
-                "Node.js",
-                "Azure Cloud Services",
-                "Python",
-                "ASP.NET Core",
-                "MongoDB",
-                "PostgreSQL"
-            ],
-            "occupationLocation": {
-                "@type": "Place",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "New Ross",
-                    "addressCountry": "Ireland"
-                }
-            }
-        },
-        "workExample": [
-            {
-                "@type": "CreativeWork",
-                "name": "Marine Data Tracker",
-                "description": "A full-stack application for tracking marine biodiversity data, built with React, Node.js, and Azure services."
-            },
-            {
-                "@type": "CreativeWork",
-                "name": "Cloud-Based Dive Log",
-                "description": "A mobile-responsive web app for divers to log and analyze their dives, using Vue.js and Azure Functions."
-            },
-            {
-                "@type": "CreativeWork",
-                "name": "Conservation Crowdfunding Platform",
-                "description": "A secure platform for funding marine conservation projects, built with ASP.NET Core and Azure Cosmos DB."
-            }
-        ],
-        "blogPosts": [
-            {
-                "@type": "BlogPosting",
-                "headline": "How I Went from Diving with Sharks to Debugging Code",
-                "datePublished": "2024-01-03",
-                "url": "https://kimhanlon.me/sharkcoding.html"
-            },
-            {
-                "@type": "BlogPosting",
-                "headline": "Version Control for the Chronically Disorganized",
-                "datePublished": "2024-01-02",
-                "url": "https://kimhanlon.me/gittingstarted.html"
-            },
-            {
-                "@type": "BlogPosting",
-                "headline": "Diving into Azure",
-                "datePublished": "2024-01-01",
-                "url": "https://kimhanlon.me/divingintoazure.html"
-            }
-        ]
-    }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Bricolage+Grotesque:wght@300;700;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        cursor: none;
+        overflow-x: hidden;
+        background-color: #0A0A0B;
+      }
+      h1, h2, h3, .font-heading {
+        font-family: 'Bricolage Grotesque', sans-serif;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      .liquid-blob {
+        position: fixed;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        filter: blur(100px);
+        pointer-events: none;
+        z-index: -1;
+        opacity: 0.15;
+      }
+      .noise {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://grainy-gradients.vercel.app/noise.svg');
+        opacity: 0.05;
+        pointer-events: none;
+        z-index: 100;
+      }
+      .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        pointer-events: none;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "gsap/": "https://esm.sh/gsap@^3.14.2/",
+    "gsap": "https://esm.sh/gsap@^3.14.2",
+    "gsap/ScrollTrigger": "https://esm.sh/gsap@^3.14.2/ScrollTrigger"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kim Hanlon",
+  "url": "https://kimhanlon.me",
+  "jobTitle": "Software Developer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Devdactyl"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Wexford",
+    "addressCountry": "IE"
+  },
+  "alumniOf": {
+    "@type": "Organization",
+    "name": "Code Institute"
+  },
+  "knowsAbout": ["React", "Django", "Azure", "Full-Stack Development", "Cloud Computing"],
+  "sameAs": [
+    "https://github.com/kimatron",
+    "https://linkedin.com/in/kimhanlon291354"
+    "https://devdactyl.ie"
+  ]
+}
+</script>
 </head>
-<body class="cyberpunk-theme">
-    <!-- Background Effects -->
-    <div class="cyber-background">
-        <div class="grid-overlay"></div>
-        <div class="glow-overlay"></div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="cyber-nav">
-      <div class="nav-container">
-          <div class="nav-logo">
-              <span class="cyber-glitch-2">&lt;KH/&gt;</span>
-          </div>
-          
-          <button class="mobile-menu-btn">
-              <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-              </div>
-          </button>
-  
-          <div class="nav-links">
-              <a href="#home" class="cyber-link active">Home</a>
-              <a href="#about" class="cyber-link">About</a>
-              <a href="#projects" class="cyber-link">Projects</a>
-              <a href="#blog" class="cyber-link">Blog</a>
-              <a href="#contact" class="cyber-link">Contact</a>
-          </div>
-      </div>
-  </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1 class="cyber-glitch">Kim Hanlon</h1>
-            <div class="cyber-terminal">
-                <span class="typing-text">Full Stack Developer</span>
-                <span class="cursor">_</span>
-            </div>
-            <div class="hero-buttons">
-                <button class="cyber-button">
-                    <span><a href="#projects" class="hero-link">View My Projects</a></span>
-                    <span class="cyber-button-glitch"></span>
-                </button>
-                <button class="cyber-button outline">
-                    <span><a href="#contact" class="hero-link">Contact Me</a></span>
-                    <span class="cyber-button-glitch"></span>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="cyber-container">
-          <h2 class="section-title cyber-glitch-2">About_Me.exe</h2>
-          <div class="about-content">
-              <div class="about-image-container">
-                  <img src="media/bigwave.jpg" alt="Kim Hanlon" class="about-image">
-                  <div class="image-glitch-effect"></div>
-              </div>
-              <div class="about-text">
-                  <p class="cyber-text">From the depths of the ocean to the cloud, my journey has been anything but conventional. With over a decade as a scuba instructor, technical diver, and marine conservationist, I’ve followed my curiosity and a drive to make a difference.</p>
-                  <p class="cyber-text">Now, I’m channeling that same energy into software development. As a full-stack developer with expertise in Microsoft Azure, I bring a unique perspective to every project—combining technical skills with a passion for solving real-world problems.</p>
-                  <p class="cyber-text">Whether it’s creating dynamic web applications or designing cloud solutions, I approach each challenge with the same dedication and excitement for discovery that shaped my underwater adventures.</p>
-                  <div class="cyber-box">
-                      <span class="cyber-box-label">SKILLS_TRANSFER</span>
-                      <ul class="cyber-list">
-                          <li>Problem-solving under pressure</li>
-                          <li>Attention to detail</li>
-                          <li>Complex system management</li>
-                          <li>Team coordination</li>
-                          <li>Adaptability in dynamic environments</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <!-- Experience Timeline -->
-  <section id="experience" class="section">
-      <h2 class="section-title cyber-glitch-2">Career_History.log</h2>
-      <div class="cyber-timeline">
-          <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                  <span class="timeline-date">2022 - Present</span>
-                  <h3>Full-Stack Developer</h3>
-                  <p>Building robust, full-stack web applications and e-commerce platforms. Proficient in cloud-native development on Azure. Experienced in AI training through data annotation and prompt engineering.</p>
-                  <div class="cyber-skills">
-                      <span>React</span>
-                      <span>Azure</span>
-                      <span>Node.js</span>
-                  </div>
-              </div>
-          </div>
-          <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                  <span class="timeline-date">2014 - 2022</span>
-                  <h3>Technical Diving Instructor</h3>
-                  <p>Trained divers in advanced techniques for deep, specialist and technical diving. Developed and implemented safety protocols and managed complex dive operations.</p>
-                  <div class="cyber-skills">
-                      <span>Technical Diving</span>
-                      <span>Training</span>
-                      <span>Safety Management</span>
-                  </div>
-              </div>
-          </div>
-          <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                  <span class="timeline-date">2011 - 2014</span>
-                  <h3>Marine Conservation Technician</h3>
-                  <p>Led data collection and analysis for various marine conservation projects. Began integrating technology solutions to streamline data management and reporting processes.</p>
-                  <div class="cyber-skills">
-                      <span>Data Analysis</span>
-                      <span>Conservation</span>
-                      <span>Research</span>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <!-- Tech Stack -->
-  <section id="tech" class="section">
-      <h2 class="section-title cyber-glitch-2">Tech_Stack.sys</h2>
-      <div class="tech-grid">
-          <div class="tech-card">
-              <div class="tech-icon">⚡</div>
-              <h3>Frontend</h3>
-              <ul class="cyber-list">
-                  <li>HTML5</li>
-                  <li>CSS3 / Sass</li>
-                  <li>JavaScript (ES6+)</li>
-                  <li>React.js</li>
-                  <li>Vue.js</li>
-              </ul>
-          </div>
-          <div class="tech-card">
-              <div class="tech-icon">🔧</div>
-              <h3>Backend</h3>
-              <ul class="cyber-list">
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>Python</li>
-                  <li>Django</li>
-                  <li>ASP.NET Core</li>
-              </ul>
-          </div>
-          <div class="tech-card">
-              <div class="tech-icon">💾</div>
-              <h3>Databases</h3>
-              <ul class="cyber-list">
-                  <li>MongoDB</li>
-                  <li>PostgreSQL</li>
-                  <li>MySQL</li>
-                  <li>Azure Cosmos DB</li>
-              </ul>
-          </div>
-          <div class="tech-card">
-              <div class="tech-icon">☁️</div>
-              <h3>Cloud & DevOps</h3>
-              <ul class="cyber-list">
-                  <li>Microsoft Azure</li>
-                  <li>Azure Functions</li>
-                  <li>Azure DevOps</li>
-                  <li>Docker</li>
-                  <li>Kubernetes</li>
-              </ul>
-          </div>
-      </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section">
-      <h2 class="section-title cyber-glitch-2">Projects.exe</h2>
-      <div class="project-grid">
-          <div class="project-card">
-              <div class="project-image">
-                  <img src="media/placeholder1.png" alt="Marine Data Tracker">
-                  <div class="project-overlay"></div>
-              </div>
-              <div class="project-content">
-                  <h3>Marine Data Tracker</h3>
-                  <p>A full-stack application for tracking marine biodiversity data, built with React, Node.js, and Azure services.</p>
-                  <div class="tech-tags">
-                      <span>React</span>
-                      <span>Node.js</span>
-                      <span>Azure</span>
-                  </div>
-              </div>
-          </div>
-          <div class="project-card">
-              <div class="project-image">
-                  <img src="media/python.gif" alt="Cloud-Based Dive Log">
-                  <div class="project-overlay"></div>
-              </div>
-              <div class="project-content">
-                  <h3>Cloud-Based Dive Log</h3>
-                  <p>A mobile-responsive web app for divers to log and analyze their dives, using Vue.js and Azure Functions.</p>
-                  <div class="tech-tags">
-                      <span>Vue.js</span>
-                      <span>Azure Functions</span>
-                      <span>MongoDB</span>
-                  </div>
-              </div>
-          </div>
-          <div class="project-card">
-              <div class="project-image">
-                  <img src="media/hotdog.png" alt="Conservation Platform">
-                  <div class="project-overlay"></div>
-              </div>
-              <div class="project-content">
-                  <h3>Conservation Crowdfunding Platform</h3>
-                  <p>A secure platform for funding marine conservation projects, built with ASP.NET Core and Azure Cosmos DB.</p>
-                  <div class="tech-tags">
-                      <span>ASP.NET Core</span>
-                      <span>Cosmos DB</span>
-                      <span>Azure</span>
-                  </div>
-              </div>
-          </div>
-          <!-- <div class="project-content">
-            <h3>Conservation Crowdfunding Platform</h3>
-            <p>A secure platform for funding marine conservation projects, built with ASP.NET Core and Azure Cosmos DB.</p>
-            <div class="tech-tags">
-                <span>ASP.NET Core</span>
-                <span>Cosmos DB</span>
-                <span>Azure</span>
-            </div>
-        </div>
-    </div> -->
-      </div>
-  </section>
-
-  <!-- Blog -->
-  <section id="blog" class="section">
-      <h2 class="section-title cyber-glitch-2">Blog_Posts.md</h2>
-      <div class="blog-grid">
-          <div class="blog-card">
-              <div class="blog-image">
-                  <img src="media/kim.jpg" alt="From Diver to Developer">
-                  <div class="blog-overlay"></div>
-              </div>
-              <div class="blog-content">
-                  <span class="blog-date">2024-01-03</span>
-                  <h3>How I Went from Diving with Sharks to Debugging Code</h3>
-                  <p>Discover how I transitioned from the depths of the ocean to the world of code, and the surprising similarities between scuba diving and software development.</p>
-                  <a href="sharkcoding.html" class="cyber-link">Read More <span class="cyber-arrow">→</span></a>
-              </div>
-          </div>
-          <div class="blog-card">
-              <div class="blog-image">
-                  <img src="media/scubacoder.jpg" alt="Scuba Coder">
-                  <div class="blog-overlay"></div>
-              </div>
-              <div class="blog-content">
-                  <span class="blog-date">2024-01-02</span>
-                  <h3>Version Control for the Chronically Disorganized</h3>
-                  <p>Unravel the mysteries of Git and version control with a humorous twist. Perfect for developers and non-techies alike who struggle with digital organization.</p>
-                  <a href="gittingstarted.html" class="cyber-link">Read More <span class="cyber-arrow">→</span></a>
-              </div>
-          </div>
-          <div class="blog-card">
-              <div class="blog-image">
-                  <img src="media/messydesk.jpg" alt="Azure Underwater">
-                  <div class="blog-overlay"></div>
-              </div>
-              <div class="blog-content">
-                  <span class="blog-date">2024-01-01</span>
-                  <h3>Diving into Azure</h3>
-                  <p>Explore the world of cloud computing through the lens of an underwater adventure. Learn how Azure's services parallel the wonders of the ocean.</p>
-                  <a href="divingintoazure.html" class="cyber-link">Read More <span class="cyber-arrow">→</span></a>
-              </div>
-          </div>
-      </div>
-  </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2 class="section-title cyber-glitch-2">Contact.sys</h2>
-        <form class="cyber-form">
-            <div class="form-group">
-                <input type="text" required placeholder="Your Name">
-                <div class="form-glitch"></div>
-            </div>
-            <div class="form-group">
-                <input type="email" required placeholder="Your Email">
-                <div class="form-glitch"></div>
-            </div>
-            <div class="form-group">
-                <textarea required placeholder="Your Message" rows="4"></textarea>
-                <div class="form-glitch"></div>
-            </div>
-            <button type="submit" class="cyber-button">
-                <span>Send_Message()</span>
-                <span class="cyber-button-glitch"></span>
-            </button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer class="cyber-footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="https://github.com/kimatron" class="cyber-link">GitHub</a>
-                <a href="https://www.linkedin.com/in/kimhanlon291354" class="cyber-link">LinkedIn</a>
-                <a href="mailto:kim@kimatron.tech" class="cyber-link">Email</a>
-            </div>
-            <div class="footer-copyright">
-                <span class="cyber-glitch-2">&copy; 2025 Kim Hanlon</span>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/main.js"></script>
+<body>
+    <div id="root"></div>
+    <!-- Deep Sea Blobs -->
+    <div id="blob-1" class="liquid-blob bg-[#FF3D00] top-[-10%] left-[-5%]"></div>
+    <div id="blob-2" class="liquid-blob bg-[#00E5FF] bottom-[-10%] right-[-5%]"></div>
+    <div id="blob-3" class="liquid-blob bg-[#B026FF] top-[40%] right-[-10%] w-[400px] h-[400px]"></div>
+    <div class="noise"></div>
+    
+    <script type="module">
+      import gsap from 'gsap';
+      window.addEventListener('mousemove', (e) => {
+        const { clientX, clientY } = e;
+        gsap.to('#blob-1', { x: clientX * 0.08, y: clientY * 0.08, duration: 3, ease: 'power2.out' });
+        gsap.to('#blob-2', { x: -clientX * 0.05, y: -clientY * 0.05, duration: 3.5, ease: 'power2.out' });
+        gsap.to('#blob-3', { x: clientX * 0.03, y: -clientY * 0.06, duration: 4, ease: 'power2.out' });
+      });
+    </script>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>
