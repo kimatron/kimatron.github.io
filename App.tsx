@@ -151,7 +151,7 @@ const App: React.FC = () => {
           <div className="reveal relative">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] -z-10"></div>
             <p className="font-mono text-xs text-cyan-400 mb-8 tracking-[0.5em] font-bold uppercase">// LETS SYNC UP</p>
-            <h2 className="text-7xl md:text-[13vw] font-black uppercase tracking-tighter mb-16 leading-[0.8]">
+            <h2 className="text-5xl md:text-[13vw] font-black uppercase tracking-tighter mb-16 leading-[0.8]">
               Ready to <br />
               <span className="text-[#FF3D00]">COLLABORATE?</span>
             </h2>

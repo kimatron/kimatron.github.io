@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
            KIM HANLON // DEV & DIVER
         </div>
         
-        <h1 className="text-5xl md:text-[8vw] font-black leading-[0.8] tracking-tight uppercase">
+        <h1 className="text-4xl md:text-[8vw] font-black leading-[0.8] tracking-tight uppercase">
           <div className="stagger-text">I SPENT TEN YEARS</div>
           <div className="stagger-text flex items-center gap-4">
             <span className="text-[#00E5FF]">TEACHING</span>
