@@ -128,7 +128,7 @@ const App: React.FC = () => {
                 <span className="text-transparent border-t border-b border-white italic py-2 inline-block px-4 text-[#FF3D00]" style={{ WebkitTextStroke: '2px #FF3D00' }}>MANY LIVES.</span>
              </h2>
              <p className="text-xl text-gray-500 font-light max-w-2xl mt-4">
-               From underwater to cloud infrastructure. Wexford-based, Dublin-working. Self-taught developer who figured out technical diving skills transfer surprisingly well to debugging production systems.
+               From under the water water to into the cloud. Wexford-based, Dublin-working. Self-taught developer who figured out technical diving skills transfer surprisingly well to debugging production systems.
              </p>
            </div>
            <div className="reveal grid grid-cols-1 md:grid-cols-3 gap-8">
