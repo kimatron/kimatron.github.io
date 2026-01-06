@@ -74,10 +74,10 @@ const App: React.FC = () => {
                   Then 2022 happened. I spent a year diving into <span className="text-[#00E5FF] font-bold">Azure and cloud technologies</span>, teaching myself to code again and bridging the gap between hardware and high-scale software.
                 </p>
                <p>
-  Now I run <a href="https://devdactyl.ie" target="_blank" rel="noopener noreferrer" className="text-white font-bold border-b-2 border-orange-500 hover:text-orange-500 transition-colors">Devdactyl</a>, building web apps for Irish businesses, and play with fintech data at <span className="text-white font-bold">Mastercard</span> in Dublin.
+  Now I run <a href="https://devdactyl.ie" target="_blank" rel="noopener noreferrer" className="text-white font-bold border-b-2 border-orange-500 hover:text-orange-500 transition-colors">Devdactyl</a>, building web apps for Irish businesses, and play with fintech data at <span className="text-white font-bold">Mastercard</span> in Dublin  while commuting from Wexford (which gives me plenty of time to question my life choices on the M11).
 </p>
                 <p className="text-sm font-mono text-cyan-400 italic">
-                  * Note: Working with me comes with a high probability of shark stories and marine conservation trivia.
+                  Note: Working with me comes with a high probability of stories about accumulating black eyes from octopi.
                 </p>
               </div>
             </div>
@@ -128,7 +128,7 @@ const App: React.FC = () => {
                 <span className="text-transparent border-t border-b border-white italic py-2 inline-block px-4 text-[#FF3D00]" style={{ WebkitTextStroke: '2px #FF3D00' }}>MANY LIVES.</span>
              </h2>
              <p className="text-xl text-gray-500 font-light max-w-2xl mt-4">
-               From under the water into the cloud. Wexford-based, Dublin-working. Self-taught developer who figured out technical diving skills transfer surprisingly well to debugging production systems.
+               From under the water ninto the cloud. Wexford-based, Dublin-working. Self-taught developer who figured out technical diving skills transfer surprisingly well to debugging production systems.
              </p>
            </div>
            <div className="reveal grid grid-cols-1 md:grid-cols-3 gap-8">

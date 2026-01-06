@@ -61,7 +61,7 @@ export const EXPERIENCES: Experience[] = [
     role: 'Software Engineer',
     company: 'Mastercard (Dublin)',
     period: '2025 — PRESENT',
-    details: 'Working with secure payment systems and enterprise infrastructure. Still figuring out that M9 commute.'
+    details: 'Working with secure payment systems and enterprise infrastructure. Still figuring out that M11 commute.'
   },
   {
     role: 'Founder & Developer',
