@@ -1,0 +1,6 @@
+# Redirect old blog URLs to new locations
+/sharkcoding.html           /blog/sharkcoding.html      301
+/gittingstarted.html        /blog/gittingstarted.html   301
+/divingintoazure.html       /blog/divingintoazure.html  301
+/dive-deep-into-data.html   /blog/dive-deep-into-data.html  301
+/diver2coder.html           /blog/diver2coder.html      301
